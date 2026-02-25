@@ -1,2 +1,2 @@
 # hosting
-página donde se enseña programación.
+html y css de página con link a hostinger.
