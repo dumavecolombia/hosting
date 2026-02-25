@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Aprende HTML, CSS y Hosting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7fb;
+            color: #333;
+        }
+
+        /* ====== BLOQUE: encabezado ====== */
+        .encabezado {
+            background: linear-gradient(135deg, #673de6, #2d1a7a);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .encabezado__titulo {
+            font-size: 2.5rem;
+        }
+
+        .encabezado__descripcion {
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+
+        /* ====== BLOQUE: contenedor ====== */
+        .contenedor {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 30px 0;
+        }
+
+        /* ====== BLOQUE: seccion ====== */
+        .seccion {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+
+        .seccion__titulo {
+            color: #673de6;
+            margin-bottom: 10px;
+        }
+
+        .seccion__texto {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        /* ====== BLOQUE: lista ====== */
+        .lista {
+            padding-left: 20px;
+        }
+
+        .lista__item {
+            margin-bottom: 8px;
+        }
+
+        /* ====== BLOQUE: boton ====== */
+        .boton {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #673de6;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }
+
+        .boton:hover {
+            background-color: #4b2bbf;
+        }
+
+        /* ====== BLOQUE: pie ====== */
+        .pie {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .pie__texto {
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .encabezado__titulo {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== ENCABEZADO ===== -->
+    <header class="encabezado">
+        <h1 class="encabezado__titulo">Aprende HTML, CSS y Hosting</h1>
+        <p class="encabezado__descripcion">
+            Descubre cómo crear tu primera página web y publicarla en internet
+        </p>
+    </header>
+
+    <!-- ===== CONTENIDO PRINCIPAL ===== -->
+    <main class="contenedor">
+
+        <!-- SECCION HTML -->
+        <section class="seccion seccion--html">
+            <h2 class="seccion__titulo">¿Qué es HTML?</h2>
+            <p class="seccion__texto">
+                HTML (HyperText Markup Language) es el lenguaje que se usa para crear la estructura de las páginas web.
+                Permite agregar títulos, textos, imágenes, enlaces y formularios.
+            </p>
+            <p class="seccion__texto">
+                Es el primer lenguaje que todo programador web debe aprender.
+            </p>
+        </section>
+
+        <!-- SECCION CSS -->
+        <section class="seccion seccion--css">
+            <h2 class="seccion__titulo">¿Qué es CSS?</h2>
+            <p class="seccion__texto">
+                CSS (Cascading Style Sheets) se utiliza para dar estilo a las páginas web creadas con HTML.
+                Permite cambiar colores, tamaños, márgenes, fuentes y diseños.
+            </p>
+            <p class="seccion__texto">
+                Gracias a CSS, una página puede verse bonita, ordenada y profesional.
+            </p>
+        </section>
+
+        <!-- SECCION HOSTING -->
+        <section class="seccion seccion--hosting">
+            <h2 class="seccion__titulo">¿Qué es un Hosting?</h2>
+            <p class="seccion__texto">
+                Un hosting es un servicio que permite guardar tu página web en un servidor para que cualquier persona
+                pueda verla desde internet.
+            </p>
+            <p class="seccion__texto">
+                Sin hosting, tu página solo existiría en tu computadora.
+            </p>
+        </section>
+
+        <!-- SECCION VENTAJAS -->
+        <section class="seccion seccion--ventajas">
+            <h2 class="seccion__titulo">Ventajas de usar Hostinger</h2>
+            <ul class="lista">
+                <li class="lista__item">✔ Precios económicos</li>
+                <li class="lista__item">✔ Fácil de usar para principiantes</li>
+                <li class="lista__item">✔ Buen rendimiento y velocidad</li>
+                <li class="lista__item">✔ Soporte técnico 24/7</li>
+                <li class="lista__item">✔ Certificado SSL gratuito</li>
+            </ul>
+
+            <a class="boton" href="https://www.hostinger.com" target="_blank">
+                Visitar Hostinger
+            </a>
+        </section>
+
+    </main>
+
+    <!-- ===== PIE DE PAGINA ===== -->
+    <footer class="pie">
+        <p class="pie__texto">
+            © 2026 - Página educativa sobre HTML, CSS y Hosting
+        </p>
+    </footer>
+
+</body>
+</html>

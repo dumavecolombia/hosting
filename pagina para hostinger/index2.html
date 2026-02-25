@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Aprende HTML, CSS y Hosting</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #e0e7ff, #f4f7fb);
+    color: #333;
+}
+
+/* ===== ANIMACIONES ===== */
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes carrusel {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-20%); }
+    66% { transform: translateX(-40%); }
+    100% { transform: translateX(0); }
+}
+
+/* ===== BANNER ===== */
+.banner {
+    background: linear-gradient(135deg, rgba(103,61,230,0.9), rgba(45,26,122,0.9)),
+                url("https://images.unsplash.com/photo-1498050108023-c5249f4df085");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 70px 20px;
+    text-align: center;
+    backdrop-filter: blur(4px);
+}
+
+.banner__titulo {
+    font-size: 3rem;
+}
+
+.banner__texto {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+/* ===== CONTENEDOR ===== */
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+/* ===== SECCION ===== */
+.seccion {
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(6px);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.08);
+    animation: aparecer 1s ease-in-out;
+}
+
+.seccion__titulo {
+    color: #673de6;
+    margin-bottom: 10px;
+}
+
+.seccion__texto {
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+/* ===== MODIFICADORES ===== */
+.seccion--html { border-left: 6px solid #ff7a18; }
+.seccion--css { border-left: 6px solid #18a0fb; }
+.seccion--hosting { border-left: 6px solid #32d2aa; }
+.seccion--galeria { border-left: 6px solid #673de6; }
+
+/* ===== IMAGENES ===== */
+.seccion__imagen {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 12px;
+}
+
+/* ===== EJEMPLO ===== */
+.ejemplo {
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+
+/* ===== CARRUSEL PEQUEÑO ===== */
+.carrusel {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.carrusel__contenedor {
+    display: flex;
+    width: 300%;
+    animation: carrusel 12s infinite;
+}
+
+.carrusel__imagen {
+    width: 20%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+/* ===== BOTON ===== */
+.boton {
+    display: inline-block;
+    padding: 14px 30px;
+    background-color: #673de6;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.boton:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(103,61,230,0.6);
+}
+
+/* ===== PIE ===== */
+.pie {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header class="banner">
+    <h1 class="banner__titulo">Aprende HTML, CSS y Hosting</h1>
+    <p class="banner__texto">Crea tu primera página web y publícala en internet con estilo profesional</p>
+</header>
+
+<main class="contenedor">
+
+<section class="seccion seccion--html">
+<h2 class="seccion__titulo">¿Qué es HTML?</h2>
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475" class="seccion__imagen">
+<p class="seccion__texto">HTML es el lenguaje que define la estructura de una página web.</p>
+<div class="ejemplo">
+&lt;h1&gt;Hola Mundo&lt;/h1&gt;
+&lt;p&gt;Mi primera página web&lt;/p&gt;
+</div>
+</section>
+
+<section class="seccion seccion--css">
+<h2 class="seccion__titulo">¿Qué es CSS?</h2>
+<img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" class="seccion__imagen">
+<p class="seccion__texto">CSS sirve para dar colores, tamaños y diseño visual.</p>
+<div class="ejemplo">
+h1 { color: blue; }
+body { background: lightgray; }
+</div>
+</section>
+
+<section class="seccion seccion--hosting">
+<h2 class="seccion__titulo">¿Qué es un Hosting?</h2>
+<img src="https://images.unsplash.com/photo-1581091870627-3b1d2c90a31e" class="seccion__imagen">
+<p class="seccion__texto">
+Un hosting es un servidor real (una computadora muy potente) que guarda tu sitio web para que esté disponible las 24 horas del día.
+</p>
+
+<p class="seccion__texto">
+<strong>Hostinger</strong> es una empresa internacional de hosting reconocida por ofrecer servicios rápidos, seguros y fáciles de usar.
+</p>
+
+<p class="seccion__texto">
+Con Hostinger puedes alojar páginas web personales, blogs, tiendas online y proyectos profesionales sin necesidad de ser experto.
+</p>
+
+<p class="seccion__texto">
+Entre sus principales ventajas se encuentran:
+</p>
+
+<p class="seccion__texto">✔ Precios accesibles para estudiantes y principiantes.</p>
+<p class="seccion__texto">✔ Servidores rápidos ubicados en diferentes partes del mundo.</p>
+<p class="seccion__texto">✔ Certificado SSL gratuito para mayor seguridad.</p>
+<p class="seccion__texto">✔ Dominio gratis en muchos planes.</p>
+<p class="seccion__texto">✔ Instalación sencilla de WordPress con un clic.</p>
+<p class="seccion__texto">✔ Panel de control intuitivo y en español.</p>
+<p class="seccion__texto">✔ Soporte técnico 24/7.</p>
+<p class="seccion__texto">✔ Copias de seguridad automáticas.</p>
+<p class="seccion__texto">✔ Excelente relación calidad-precio.</p>
+
+<p class="seccion__texto">
+Además, al usar el enlace que aparece abajo en esta página obtienes un <strong>20% de descuento en todas las compras</strong>, 
+lo que te permite ahorrar dinero al contratar tu hosting y comenzar tu proyecto web de forma económica.
+</p>
+
+<p class="seccion__texto">
+Este descuento aplica tanto para planes básicos como para planes avanzados, por lo que es una gran oportunidad para iniciar tu sitio web hoy mismo.
+</p>
+
+<a href="https://www.hostinger.com" target="_blank" class="boton">
+Obtener 20% de descuento en Hostinger
+</a>
+</section>
+
+<section class="seccion seccion--galeria">
+<h2 class="seccion__titulo">Galería y Carrusel</h2>
+
+<div class="carrusel">
+<div class="carrusel__contenedor">
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" class="carrusel__imagen">
+<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" class="carrusel__imagen">
+<img src="https://images.unsplash.com/photo-1508780709619-79562169bc64" class="carrusel__imagen">
+</div>
+</div>
+</section>
+
+</main>
+
+<footer class="pie">
+<p>© 2026 - Página educativa con BEM, banner atractivo y descuento Hostinger</p>
+</footer>
+
+</body>
+</html>
